@@ -1,0 +1,153 @@
+body{
+    font-family: "montserrat", sans-serif;
+    background: url(https://images.pexels.com/photos/3773651/pexels-photo-3773651.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    border-radius: 150px;
+}
+
+.contact-method {
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    background: #9fcdec;
+    margin: 35px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    border-radius: 150px;
+}
+
+.contact-method i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 150px;
+    width: 100%;
+    height: 100%;
+    font-size: 55px;
+    line-height: 150px;
+    z-index: 1;
+    transition: transform 0.7s;
+}
+
+.contact-method span{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.contact-method:hover i{
+transform: translateY(-45px);
+}
+
+.fnt-size {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: DejaVu Sans Mono, monospace;
+    color: black;
+}
+.headtext {
+    padding-top: 20px;
+}
+
+.social {
+    padding-top: 35px;
+    color: #5fcf80;
+}
+
+.social li {
+    display: inline;
+    padding: 20px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+}
+
+.fa-facebook-square {
+    background: #3B5998;
+    color: white;
+    background-size: 55%;
+    background-position: 70% 0;
+    background-repeat: no-repeat;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    color: white;
+}
+
+.fa-envelope {
+    background: #dd4b39;
+    color: white;
+    text-shadow: 1px 1px 1px #ccc;
+    font-size: 1.5em;
+}
+
+.fa-whatsapp {
+    color:#fff;
+    background:
+    linear-gradient(#25d366,#25d366)10px 84%/10px 15px no-repeat,
+    radial-gradient(#25d366 100%,transparent 0);
+    color: white;
+}
+
+.fa-phone {
+    background: #2c4762;
+    color: white;
+}
+
+.fa-map-marker {
+    background: #ff6600;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-method {
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+        background: #9fcdec;
+        margin: 12px;
+        color: #fff;
+        position: relative;
+        cursor: pointer;
+        border-radius: 150px;
+    }
+    
+    .contact-method span {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .desktop-viw {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .mob-viw {
+        display: none;
+    }
+}
